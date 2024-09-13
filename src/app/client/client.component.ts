@@ -10,6 +10,7 @@ import Swal from 'sweetalert2';
 export class ClientComponent implements OnInit{
 constructor(private myservice:AllservicesService){}
 listCLNT:any
+c:number=1
 ngOnInit(): void {
   this.listClientFunction()
 }

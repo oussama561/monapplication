@@ -28,6 +28,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SendmailComponent } from './sendmail/sendmail.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { CalendarComponent } from './calendar/calendar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +55,8 @@ import { SendmailComponent } from './sendmail/sendmail.component';
     HomeComponent,
     LoginComponent,
     ProfileComponent,
-    SendmailComponent
+    SendmailComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +64,7 @@ import { SendmailComponent } from './sendmail/sendmail.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
 
   ],
   providers: [],

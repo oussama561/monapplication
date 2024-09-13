@@ -13,6 +13,7 @@ export class AdminComponent implements OnInit {
 //declation injection de dependance
 constructor(private myservice:AllservicesService){}
 listADM:any
+c:number=1
 
 
 ngOnInit(): void {

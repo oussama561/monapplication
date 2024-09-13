@@ -12,6 +12,7 @@ export class ProduitComponent implements OnInit{
   constructor(private myservice:AllservicesService){}
   listPRD:any
   listCAT:any
+  c:number=1
   ngOnInit(): void {
     this.listprodfunction()
     this.listcatfunction()

@@ -50,7 +50,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let a of listCLNT; let i =index;">
+                        <tr *ngFor="let a of listCLNT |paginate:{itemsPerPage:3,currentPage:c}; let i =index;">
                           <td>{{i+1}}</td>
                           <td>
                             <div class="d-flex px-2 py-1">
@@ -97,6 +97,8 @@
                      
                       </tbody>
                   </table>
+                  <pagination-controls (pageChange)="c=$event"></pagination-controls>
+                  
 
                   
                 </div>
